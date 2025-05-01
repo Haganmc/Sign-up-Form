@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(assets/Norse-Bold.woff) format('woff');
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f9fafb;
+}
+
+.sidebar {
+    display: flex; /* Ensure Flexbox is applied */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Push content to the top and bottom */
+    height: 100%; /* Ensure the sidebar takes full height */
+    flex-basis: 40%;
+    background-image: url(assets/photo-1585202900225-6d3ac20a6962.avif);
+    background-position: center;
+    background-size: cover;
+    min-width: 30%;
+}
+
+.sidebar p {
+    font-size: 1rem;
+    color: white;
+    margin: 0 0 30px 30px; /* Add bottom margin for spacing */
+    align-self: center; /* Ensure alignment to the left */
+}
+
+#logo {
+    background-color: rgb(0, 0,0, 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 30%;
+    padding: 0;
+}
+
+#logo h1 {
+    font-family: Norse-Bold;
+    font-size: 6rem;
+    padding: 0;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.top, .main, .bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top {
+    font-weight: bold;
+    padding: 0 0 0px 30px;
+    max-width: 50%;
+}
+
+.main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 0;
+    width: 100%;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.item-container label {
+    font-size: 0.8rem;
+    margin: 0 0 5px 30px;
+    letter-spacing: .1em;
+}
+.item input {
+    max-width: 500px;
+    height: 30px;
+    width: 15rem;
+    margin: 0 0 20px 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #E5E7EB;
+}
+
+.main input:focus {
+    outline: none;
+    border: 1px solid #007bff;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+
+.item input[type="password"]:invalid:not(:focus) {
+    color: inherit; /* Keep the default text color */
+    border-color: #ccc; /* Default border color */
+    background-color: #E5E7EB; /* Default background color */
+}
+
+.item input[type="password"]:invalid:focus,
+.item input[type="password"]:invalid {
+    color: red; /* Text color turns red */
+    border-color: red; /* Border turns red */
+    background-color: #FDE8E8; /* Light red background for better visibility */
+    box-shadow: 0 0 5px red; /* Optional: Add a red glow effect */
+}
+
+.bottom button {
+    background-color: #596D48;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 15rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.bottom button:hover {
+    background-color: #4a5b3d;
+}
+
+.bottom p {
+    font-size: 0.8rem;
+    margin: 10px 0 0 30px;
+}
+.bottom p a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.bottom p a:hover {
+    text-decoration: underline;
+}
+.bottom p a:visited {
+    color: #596D48;
+}
+.bottom p a:active {
+    color: #596D48;
+}

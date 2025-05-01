@@ -8,42 +8,58 @@
 </head>
 <body>
     <!-- image side bar -->
-     <div></div>
-
-    <!-- introduction -->
-     <div>
-        <p>This is not a real online service! You know you need something like this in your life to help you 
-            realize your deepest dreams. Sign up <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em> you want to.</p>
+     <div class="sidebar">
+        <div id="logo">
+            <img src="assets/odin-lined.png" alt="odin logo" height=128px>
+            <h1>ODIN</h1>
+        </div>
+        <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
      </div>
-
-    <!-- Sign-up form -->
-        <h1>Let's do this!</h1>
-     <form>
-        <label for="fname">FIRST NAME</label>
-        <input type="text" id="fname" name="fname" required>
-
-        <label for="lname">LAST NAME</label>
-        <input type="text" id="lname" name="lname" required>
-
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="password">PASSWORD</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="cpassword">CONFIRM PASSWORD</label>
-        <input type="password" id="cpassword" name="cpassword" required>
-
-        <!-- submit -->
-         <div>
+    <form>
+        <div class="top">
+            <p>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="main">
+            <h1>Let's do this!</h1>
+            <div class="item-container">
+                <div class="item">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="item">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="item">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" minlength="12" required>
+                </div>
+                <div class="item">
+                    <label for="cpassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="cpassword" name="cpassword" minlength="12" required>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <!-- submit -->
             <button type="submit">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
-         </div>
-     </form>
+        </div>
+    </form>
 </body>
 </html>
